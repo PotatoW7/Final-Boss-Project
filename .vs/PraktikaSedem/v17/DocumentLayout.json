@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Data\\Migrations\\20250701052114_First.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PraktikaSedem\\Data\\Migrations\\20250701052114_First.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|c:\\users\\student\\source\\repos\\praktikasedem\\praktikasedem\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620E417E-AFEA-4E3E-8070-DB72A887A2D2}|PraktikaSedem\\PraktikaSedem.csproj|solutionrelative:praktikasedem\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorsController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\DoctorsController.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Controllers\\DoctorsController.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\DoctorsController.cs",
+              "RelativeToolTip": "PraktikaSedem\\Controllers\\DoctorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:51:07.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "PraktikaSedem\\Controllers\\PatientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:50:14.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "PraktikaSedem\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:48:35.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\Appointment.cs",
+              "RelativeToolTip": "PraktikaSedem\\Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:06:19.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PraktikaSedem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:25:12.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\Patient.cs",
+              "RelativeToolTip": "PraktikaSedem\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:05:46.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\Doctor.cs",
+              "RelativeToolTip": "PraktikaSedem\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:11:18.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250701052114_First.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Data\\Migrations\\20250701052114_First.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Data\\Migrations\\20250701052114_First.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Data\\Migrations\\20250701052114_First.cs",
+              "RelativeToolTip": "PraktikaSedem\\Data\\Migrations\\20250701052114_First.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:21:15.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "PraktikaSedem\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\PraktikaSedem\\PraktikaSedem\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "PraktikaSedem\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:07:28.804Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
