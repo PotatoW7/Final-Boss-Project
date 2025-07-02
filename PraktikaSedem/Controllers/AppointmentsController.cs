@@ -61,6 +61,8 @@ namespace PraktikaSedem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("AppointmentId,Date,Time,PatientId,DoctorId,Status")] Appointment appointment)
         {
+            ModelState.Remove("Doctor");
+            ModelState.Remove("Patient");
             if (ModelState.IsValid)
             {
                 _context.Add(appointment);
