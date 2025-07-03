@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,12 +21,14 @@ namespace PraktikaSedem.Controllers
         }
 
         // GET: Patients
+        [Authorize(Roles = "Admin, Doctor")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Patient.ToListAsync());
         }
 
         // GET: Patients/Details/5
+        [Authorize(Roles = "Admin, Doctor")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -50,13 +53,18 @@ namespace PraktikaSedem.Controllers
         }
 
         // POST: Patients/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Doctor")]
         public async Task<IActionResult> Create([Bind("PatientId,FirstName,LastName,Email")] Patient patient)
         {
             ModelState.Remove("Appointments");
+
+            if (await EmailExists(patient.Email))
+            {
+                ModelState.AddModelError("Email", "This email is already used by another doctor or patient.");
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(patient);
@@ -83,15 +91,20 @@ namespace PraktikaSedem.Controllers
         }
 
         // POST: Patients/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Doctor")]
         public async Task<IActionResult> Edit(int id, [Bind("PatientId,FirstName,LastName,Email")] Patient patient)
         {
             if (id != patient.PatientId)
             {
                 return NotFound();
+            }
+
+            // Check for duplicate email, excluding the current patient
+            if (await EmailExists(patient.Email, patient.PatientId))
+            {
+                ModelState.AddModelError("Email", "This email is already used by another doctor or patient.");
             }
 
             if (ModelState.IsValid)
@@ -138,6 +151,7 @@ namespace PraktikaSedem.Controllers
         // POST: Patients/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Doctor")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var patient = await _context.Patient.FindAsync(id);
@@ -153,6 +167,14 @@ namespace PraktikaSedem.Controllers
         private bool PatientExists(int id)
         {
             return _context.Patient.Any(e => e.PatientId == id);
+        }
+
+        // Helper method to check if an email exists in Doctors or Patients
+        private async Task<bool> EmailExists(string email, int? excludePatientId = null)
+        {
+            var doctorExists = await _context.Doctor.AnyAsync(d => d.Email == email);
+            var patientExists = await _context.Patient.AnyAsync(p => p.Email == email && (!excludePatientId.HasValue || p.PatientId != excludePatientId.Value));
+            return doctorExists || patientExists;
         }
     }
 }

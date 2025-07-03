@@ -50,13 +50,17 @@ namespace PraktikaSedem.Controllers
         }
 
         // POST: Doctors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("DoctorId,FirstName,LastName,Email,Specialization")] Doctor doctor)
         {
             ModelState.Remove("Appointments");
+
+            if (await EmailExists(doctor.Email))
+            {
+                ModelState.AddModelError("Email", "This email is already used by another doctor or patient.");
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(doctor);
@@ -83,8 +87,6 @@ namespace PraktikaSedem.Controllers
         }
 
         // POST: Doctors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("DoctorId,FirstName,LastName,Email,Specialization")] Doctor doctor)
@@ -92,6 +94,12 @@ namespace PraktikaSedem.Controllers
             if (id != doctor.DoctorId)
             {
                 return NotFound();
+            }
+
+            // Check for duplicate email, excluding current doctor
+            if (await EmailExists(doctor.Email, doctor.DoctorId))
+            {
+                ModelState.AddModelError("Email", "This email is already used by another doctor or patient.");
             }
 
             if (ModelState.IsValid)
@@ -153,6 +161,14 @@ namespace PraktikaSedem.Controllers
         private bool DoctorExists(int id)
         {
             return _context.Doctor.Any(e => e.DoctorId == id);
+        }
+
+        // Helper method to check if an email exists in Doctors or Patients
+        private async Task<bool> EmailExists(string email, int? excludeDoctorId = null)
+        {
+            var doctorExists = await _context.Doctor.AnyAsync(d => d.Email == email && (!excludeDoctorId.HasValue || d.DoctorId != excludeDoctorId.Value));
+            var patientExists = await _context.Patient.AnyAsync(p => p.Email == email);
+            return doctorExists || patientExists;
         }
     }
 }
